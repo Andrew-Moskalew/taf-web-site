@@ -72,6 +72,7 @@ public class WebSiteTest {
         Assertions.assertEquals("Неправильный пароль. \n" + "Сбросить пароль?", driver.findElement(By.xpath(website21vekbyPage.errorMassagePasswordInvalid)).getText());
         driver.close();
     }
+
     @Test
     public void test21vekInvalidEmailFormat() throws InterruptedException {
         WebDriver driver = new ChromeDriver();
