@@ -14,7 +14,7 @@ public class OzbyTest {
         driver.get("https://oz.by/");
         OzbyPage ozbyPage = new OzbyPage();
         driver.findElement(By.xpath(ozbyPage.buttonLogin)).click();
-        driver.findElement(By.xpath(ozbyPage.buttonLoginOptionEmail)).click();
+        driver.findElement(By.xpath(ozbyPage.tabLinkEmail)).click();
         driver.findElement(By.xpath(ozbyPage.inputEmail)).sendKeys("example@test.by");
         driver.findElement(By.xpath(ozbyPage.inputPassword)).sendKeys("testPassword");
         driver.findElement(By.xpath(ozbyPage.buttonEnter)).click();
