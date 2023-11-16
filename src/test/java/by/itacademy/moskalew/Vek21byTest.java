@@ -18,8 +18,10 @@ public class Vek21byTest {
         driver.findElement(By.xpath(vek21byPage.buttonAccount)).click();
         driver.findElement(By.xpath(vek21byPage.buttonLogin)).click();
         driver.findElement(By.xpath(vek21byPage.buttonEnter)).click();
-        Assertions.assertEquals("Электронная почта не указана", driver.findElement(By.xpath(vek21byPage.errorMassageEmail)).getText());
-        Assertions.assertEquals("Пароль не указан", driver.findElement(By.xpath(vek21byPage.errorMassagePassword)).getText());
+        Assertions.assertEquals("Электронная почта не указана",
+                driver.findElement(By.xpath(vek21byPage.errorMassageEmail)).getText());
+        Assertions.assertEquals("Пароль не указан",
+                driver.findElement(By.xpath(vek21byPage.errorMassagePassword)).getText());
         driver.close();
     }
 
@@ -35,7 +37,8 @@ public class Vek21byTest {
         driver.findElement(By.xpath(vek21byPage.buttonLogin)).click();
         driver.findElement(By.xpath(vek21byPage.inputEmail)).sendKeys("test@test.by");
         driver.findElement(By.xpath(vek21byPage.buttonEnter)).click();
-        Assertions.assertEquals("Пароль не указан", driver.findElement(By.xpath(vek21byPage.errorMassagePassword)).getText());
+        Assertions.assertEquals("Пароль не указан",
+                driver.findElement(By.xpath(vek21byPage.errorMassagePassword)).getText());
         driver.close();
     }
 
@@ -51,7 +54,8 @@ public class Vek21byTest {
         driver.findElement(By.xpath(vek21byPage.buttonLogin)).click();
         driver.findElement(By.xpath(vek21byPage.inputPassword)).sendKeys("testpassword");
         driver.findElement(By.xpath(vek21byPage.buttonEnter)).click();
-        Assertions.assertEquals("Электронная почта не указана", driver.findElement(By.xpath(vek21byPage.errorMassageEmail)).getText());
+        Assertions.assertEquals("Электронная почта не указана",
+                driver.findElement(By.xpath(vek21byPage.errorMassageEmail)).getText());
         driver.close();
     }
 
@@ -69,7 +73,8 @@ public class Vek21byTest {
         driver.findElement(By.xpath(vek21byPage.inputPassword)).sendKeys("testpassword");
         driver.findElement(By.xpath(vek21byPage.buttonEnter)).click();
         Thread.sleep(500);
-        Assertions.assertEquals("Неправильный пароль. \n" + "Сбросить пароль?", driver.findElement(By.xpath(vek21byPage.errorMassagePassword)).getText());
+        Assertions.assertEquals("Неправильный пароль. \n" + "Сбросить пароль?",
+                driver.findElement(By.xpath(vek21byPage.errorMassagePassword)).getText());
         driver.close();
     }
 
@@ -87,7 +92,8 @@ public class Vek21byTest {
         driver.findElement(By.xpath(vek21byPage.inputPassword)).sendKeys("testpassword");
         driver.findElement(By.xpath(vek21byPage.buttonEnter)).click();
         Thread.sleep(500);
-        Assertions.assertEquals("Неправильный формат электронной почты", driver.findElement(By.xpath(vek21byPage.errorMassageEmail)).getText());
+        Assertions.assertEquals("Неправильный формат электронной почты",
+                driver.findElement(By.xpath(vek21byPage.errorMassageEmail)).getText());
         driver.close();
     }
 }
