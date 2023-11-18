@@ -14,6 +14,7 @@ public class Vek21byPage {
     public String buttonCookieReject = "//*[@id=\"modal-cookie\"]/div/div[2]/div/button[2]/div";
 
     WebDriver driver;
+
     public Vek21byPage(WebDriver driver){
         this.driver = driver;
     }

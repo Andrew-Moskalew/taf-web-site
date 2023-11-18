@@ -11,6 +11,7 @@ public class OzbyPage {
     public String buttonEnter = "//*[@id=\"loginForm\"]/button";
     public String errorMassage = "//*[@id=\"test\"]/div/div";
     public String headerTextEnter = "//*[@id=\"loginPopupIntro\"]";
+
     WebDriver driver;
 
     public OzbyPage(WebDriver driver) {
