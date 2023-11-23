@@ -12,7 +12,7 @@ public class PassRWbyPage {
     private String errorMassageLoginOrEmail = "//*[@id=\"login-error\"]";
     private String errorMassagePassword = "//*[@id=\"password-error\"]";
     private String errorMassageUserNotFound = "//*[@id=\"auth-popup\"]/div/div/div[2]/div[2]/div";
-    WebDriver driver;
+    private WebDriver driver;
 
     public PassRWbyPage(WebDriver driver) {
         this.driver = driver;
@@ -45,6 +45,7 @@ public class PassRWbyPage {
     public String getTextErrorMassagePassword() {
         return driver.findElement(By.xpath(errorMassagePassword)).getText();
     }
+
     public String getTextErrorMassageUserNotFound() {
         return driver.findElement(By.xpath(errorMassageUserNotFound)).getText();
     }

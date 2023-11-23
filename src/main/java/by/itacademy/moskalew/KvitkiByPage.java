@@ -8,12 +8,12 @@ public class KvitkiByPage {
     private String buttonLogin = "/html/body/div[3]/div[2]/div/app-user-account-link";
     private String buttonTabEnter = "//*[@id=\"mat-tab-label-0-0\"]/span[2]";
     private String buttonEnter = "//*[@id=\"mat-tab-content-0-0\"]/div/app-user-login-form/app-collapsible/div/app-ui-button/button";
-   private String inputEmail = "/html/body/div[7]/div[2]/div/mat-dialog-container/div/div/app-user-auth-form/div[2]/mat-tab-group/div/mat-tab-body[1]/div/app-user-login-form/app-collapsible/div/app-form-builder/form/app-collapsible[1]/app-email-input/div/input";
+    private String inputEmail = "/html/body/div[7]/div[2]/div/mat-dialog-container/div/div/app-user-auth-form/div[2]/mat-tab-group/div/mat-tab-body[1]/div/app-user-login-form/app-collapsible/div/app-form-builder/form/app-collapsible[1]/app-email-input/div/input";
     private String inputPassword = "/html/body/div[7]/div[2]/div/mat-dialog-container/div/div/app-user-auth-form/div[2]/mat-tab-group/div/mat-tab-body[1]/div/app-user-login-form/app-collapsible/div/app-form-builder/form/app-collapsible[2]/app-password-input/div/input";
     private String errorMassageEmail = "//*[@id=\"mat-tab-content-0-0\"]/div/app-user-login-form/app-collapsible/div/app-form-builder/form/app-collapsible[1]/app-email-input/app-field-error/app-collapsible";
     private String errorMassagePassword = "//*[@id=\"mat-tab-content-0-0\"]/div/app-user-login-form/app-collapsible/div/app-form-builder/form/app-collapsible[2]/app-password-input/app-field-error/app-collapsible";
     private String errorMassageNoFindUser = "//*[@id=\"mat-mdc-dialog-1\"]/div/div/app-info-dialog-content/div[3]";
-    WebDriver driver;
+    private WebDriver driver;
 
     public KvitkiByPage(WebDriver driver) {
         this.driver = driver;
@@ -58,6 +58,7 @@ public class KvitkiByPage {
     public String getTextErrorMassagePassword() {
         return driver.findElement(By.xpath(errorMassagePassword)).getText();
     }
+
     public String getTextErrorMassageNoFindUser() {
         return driver.findElement(By.xpath(errorMassageNoFindUser)).getText();
     }
