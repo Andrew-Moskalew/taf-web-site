@@ -45,6 +45,7 @@ public class PassRWbyTest {
         Assertions.assertEquals("Заполните поле", passRWbyPage.getTextErrorMassageLoginOrEmail());
         driver.close();
     }
+
     @Test
     public void testPassRWWithEmptyPassword() throws InterruptedException {
         WebDriver driver = new ChromeDriver();
@@ -58,6 +59,7 @@ public class PassRWbyTest {
         Assertions.assertEquals("Заполните поле", passRWbyPage.getTextErrorMassagePassword());
         driver.close();
     }
+
     @Test
     public void testPassRWWithInvalidValues() throws InterruptedException {
         WebDriver driver = new ChromeDriver();
@@ -71,6 +73,6 @@ public class PassRWbyTest {
         Thread.sleep(500);
         passRWbyPage.clickButtonEnter();
         Assertions.assertEquals("Пользователь не найден", passRWbyPage.getTextErrorMassageUserNotFound());
-                driver.close();
+        driver.close();
     }
 }
