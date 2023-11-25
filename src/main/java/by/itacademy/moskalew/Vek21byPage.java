@@ -4,16 +4,16 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 public class Vek21byPage {
-    private String buttonAccount = "//*[@id=\"header\"]/div/div[3]/div/div[3]/div/div/div/button/span";
-    private String buttonLogin = "//*[@id=\"userToolsDropDown\"]/div/div[1]/div[2]/button";
-    private String inputEmail = "//*[@id=\"login-email\"]";
-    private String inputPassword = "//*[@id=\"login-password\"]";
+    private String buttonAccount = "//button[@class='styles_userToolsToggler__c2aHe']";
+    private String buttonLogin = "//button[@data-testid='loginButton']";
+    private String inputEmail = "//input[@id='login-email']";
+    private String inputPassword = "//input[@id='login-password']";
     private String errorMassageEmail = "//*[@id=\"default-:R2mm:-modal\"]/div/div/div[2]/div/div/form/div/div[1]/div[3]/span[2]";
     private String errorMassagePassword = "//*[@id=\"default-:R2mm:-modal\"]/div/div/div[2]/div/div/form/div/div[2]/div[3]/span[2]";
-    private String buttonEnter = "//*[@id=\"default-:R2mm:-modal\"]/div/div/div[2]/div/div/form/div/div[3]/button";
-    private String buttonCookieReject = "//*[@id=\"modal-cookie\"]/div/div[2]/div/button[2]/div";
+    private String buttonEnter = "//button[@data-testid='loginSubmit']";
+    private String buttonCookieReject = "//button[@class='Button-module__button AgreementCookie_reject__f5oqP Button-module__gray-secondary']";
 
-    WebDriver driver;
+    private WebDriver driver;
 
     public Vek21byPage(WebDriver driver) {
         this.driver = driver;
@@ -50,4 +50,5 @@ public class Vek21byPage {
     public String getTextErrorMassagePassword() {
         return driver.findElement(By.xpath(errorMassagePassword)).getText();
     }
+
 }

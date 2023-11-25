@@ -94,4 +94,5 @@ public class Vek21byTest {
         Assertions.assertEquals("Неправильный формат электронной почты", vek21byPage.getTextErrorMassageEmail());
         driver.close();
     }
+
 }

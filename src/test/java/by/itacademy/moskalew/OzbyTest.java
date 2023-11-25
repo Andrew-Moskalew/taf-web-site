@@ -50,4 +50,5 @@ public class OzbyTest {
                 ozbyPage.getTextErrorMassage());
         driver.close();
     }
+
 }
