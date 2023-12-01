@@ -5,6 +5,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 public class OzbyTest extends BaseTest {
+
     private OzbyPage ozbyPage;
 
     @BeforeEach

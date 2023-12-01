@@ -5,6 +5,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 public class KvitkiByTest extends BaseTest {
+
     private KvitkiByPage kvitkiByPage;
 
     @BeforeEach
